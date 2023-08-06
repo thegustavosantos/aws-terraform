@@ -18,3 +18,4 @@
     Dicas:
         - Sequência de comandos para deploy : init, plan, apply
         - Terraform.tfstatus                : dados da última versão do recurso, quando rodamos o show é de lá que puxa os dados.
+        - depends_on                        : Usado quando queremos criar dependencia entre a criação dos recursos
