@@ -1,9 +1,9 @@
 resource "aws_dynamodb_table" "dynamodb-hom" {
-  provider       = aws.us-east-2
-  name           = "GameScores"
-  billing_mode   = "PAY_PER_REQUEST"
-  hash_key       = "UserId"
-  range_key      = "GameTitle"
+  provider     = aws.us-east-2
+  name         = "GameScores"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "UserId"
+  range_key    = "GameTitle"
 
   attribute {
     name = "UserId"

@@ -33,3 +33,7 @@ resource "aws_security_group" "access-ssh-us-east-2" {
     Name = "ssh-access"
   }
 }
+
+data "http" "myip" {
+  url = "http://ipv4.icanhazip.com"
+}
