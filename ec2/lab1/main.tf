@@ -26,7 +26,7 @@ resource "aws_instance" "dev" {
   tags = {
     Name = "dev-${count.index}"
   }
-  vpc_security_group_ids = ["${aws_security_group.access-ssh.id}"]
+  vpc_security_group_ids = [aws_security_group.access-ssh.id]
 }
 
 resource "aws_instance" "dev-4" {
@@ -36,7 +36,7 @@ resource "aws_instance" "dev-4" {
   tags = {
     Name = "dev-4"
   }
-  vpc_security_group_ids = ["${aws_security_group.access-ssh.id}"]
+  vpc_security_group_ids = [aws_security_group.access-ssh.id]
   depends_on             = [aws_s3_bucket.dev-4]
 }
 
@@ -47,7 +47,7 @@ resource "aws_instance" "dev-5" {
   tags = {
     Name = "dev-5"
   }
-  vpc_security_group_ids = ["${aws_security_group.access-ssh.id}"]
+  vpc_security_group_ids = [aws_security_group.access-ssh.id]
 }
 
 resource "aws_instance" "dev-6" {
@@ -58,7 +58,7 @@ resource "aws_instance" "dev-6" {
   tags = {
     Name = "dev-6"
   }
-  vpc_security_group_ids = ["${aws_security_group.access-ssh-us-east-2.id}"]
+  vpc_security_group_ids = [aws_security_group.access-ssh-us-east-2.id]
   depends_on             = [aws_dynamodb_table.dynamodb-hom]
 }
 
@@ -70,5 +70,5 @@ resource "aws_instance" "dev-7" {
   tags = {
     Name = "dev-7"
   }
-  vpc_security_group_ids = ["${aws_security_group.access-ssh-us-east-2.id}"]
+  vpc_security_group_ids = [aws_security_group.access-ssh-us-east-2.id]
 }
