@@ -7,6 +7,7 @@
         - https://www.terraform.io/
         - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources
         - https://registry.terraform.io/providers/hashicorp/http/latest/docs/data-sources/http
+        - https://developer.hashicorp.com/terraform/tutorials/automation/github-actions?utm_source=WEBSITE&utm_medium=WEB_IO&utm_offer=ARTICLE_PAGE&utm_content=DOCS
 
 
     Comandos:
