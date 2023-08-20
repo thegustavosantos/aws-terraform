@@ -49,3 +49,8 @@
         - O retorno da função é opcional 
         - Uma das formas de testar é criando um evento que dispara a lambda
         - Sempre ao alterar a função é necessário fazer novo deploy
+    
+    Gatilho:
+        - 
+        - 
+        - 
